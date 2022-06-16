@@ -1,7 +1,8 @@
 import "./Landing.css";
 import Intro from "./Intro.js";
 import Carousel, { CarouselItem } from "./Carousel";
-import TaskManager from "./TaskManager";
+import Onboarding1 from "./Onboarding1";
+import Onboarding2 from "./Onboarding2";
 
 function Landing() {
   return (
@@ -12,12 +13,16 @@ function Landing() {
         </CarouselItem>
         <CarouselItem>
           {" "}
-          <TaskManager />{" "}
+          <Onboarding1 />{" "}
         </CarouselItem>
-        <CarouselItem>create daily routine component</CarouselItem>
+        <CarouselItem>
+          <Onboarding2 />
+        </CarouselItem>
         <CarouselItem>organize your task component</CarouselItem>
       </Carousel>
-      <TaskManager />
+      <Onboarding1 />
+      <hr />
+      <Onboarding2 />
     </div>
   );
 }
