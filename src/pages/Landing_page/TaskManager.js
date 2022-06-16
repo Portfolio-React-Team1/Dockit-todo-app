@@ -24,6 +24,13 @@ function TaskManager() {
             You can easily manage all your daily tasks on Dockit for free
           </span>{" "}
         </p>
+        <div className="screen-end">
+          <div className="back">Back</div>
+          <div className="next"> Next</div>
+        </div>
+        <div className="navi">
+          <div className="rectangle-90"> </div>
+        </div>
       </div>
     </div>
   );

@@ -10,18 +10,14 @@
   pointer-events: auto;
 }
 .onboarding-1 {
-  align-items: center;
   background-color: #ffffff;
   height: 812px;
   width: 375px;
-  position: relative;
 }
 .skip {
   align-self: flex-start;
   text-align: left;
   letter-spacing: 0;
-  line-height: 24px;
-  margin-left: 24px;
   margin-top: 58px;
   min-height: 24px;
   white-space: nowrap;
@@ -33,7 +29,7 @@
 }
 
 .group-182 {
-  height: 275px;
+  height: 278px;
   margin-left: 0;
   margin-top: 2px;
   width: 210px;
@@ -83,4 +79,41 @@
   color: rgba(0, 0, 0, 0.87);
   width: 290px;
   white-space: nowrap;
+}
+
+.screen-end {
+  display: flex;
+
+  justify-content: space-between;
+}
+.screen-end .back,
+.next {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 150px;
+}
+
+.back {
+  color: #000000;
+}
+.next {
+  color: #ffffff;
+  padding: 12px 24px;
+  background-color: #f48319;
+  border-radius: 4px;
+  align-items: center;
+  gap: 10px;
+}
+
+.rectangle-90 {
+  width: 134px;
+  height: 5px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  background: #000000;
+  border-radius: 36px;
+  left: 121px;
 }
