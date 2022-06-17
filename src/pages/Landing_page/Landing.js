@@ -1,3 +1,4 @@
+
 import "./Landing.css";
 import Intro from "./Intro.js";
 import Carousel, { CarouselItem } from "./Carousel";
@@ -34,5 +35,3 @@ function Landing() {
     </div>
   );
 }
-
-export default Landing;
