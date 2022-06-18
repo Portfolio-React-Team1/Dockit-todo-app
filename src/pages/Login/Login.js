@@ -1,9 +1,10 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './Login.css';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 //import Link from 'react-router-dom'
+
 
 const Login = () => {
 const [formValid,setFormValid] =useState(false)
@@ -14,26 +15,26 @@ const [form,setForm] =useState({
 
 const submitHandler=(e)=>{
   e.preventDefault();
-  if(form.username !== "" && form.password !==""){
+  if(form.username !== "" && form.password !== ""){
     setFormValid(true);
-
    }
+
    else{
     setFormValid(false);
      toast.error("please input all fields");
    }
 
-
    // direct to the homepage if form is valid
+
    if(formValid){
     toast.success("welcome back");
     setTimeout(()=>{
-      windows.location ="/"
-    },2000)
-   }
-  
-}
+      window.location ="/" ;
+      },2000)
+    }
 
+ }
+ 
   return (
    <section className='login-page'>
     <ToastContainer/>
@@ -55,7 +56,7 @@ const submitHandler=(e)=>{
           <button><FaGoogle/> Login with google</button>
           <button><FaApple/> Login with Apple</button>
         </div>
-        <h3>Dont have an account ? <a href="#">Login</a></h3>
+        <h3>Dont have an account ? <a href="#">Register</a></h3>
         <div className='thick-line'></div>
         
       </form>
@@ -65,6 +66,8 @@ const submitHandler=(e)=>{
 
       )
 }
+ 
+
 
 
 export default Login
