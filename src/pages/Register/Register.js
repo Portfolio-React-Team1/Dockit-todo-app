@@ -3,7 +3,7 @@ import '../Login/Login.css';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-//import {Link} from 'react-router-dom';
+import {Link} from  'react-router-dom';
 
 
 const Register = () => {
@@ -28,13 +28,12 @@ if(password !== confirmPassword){
     setFormValid(true)
   }
 
-
   if(userName && password && formValid){
     toast.success("WELCOME " + ` ${userName}`)
-      //setTimeout(()=>{
-      //  window.location='/';
+       setTimeout(()=>{
+        window.location='/index';
     
-       // },2000);
+        },2000);
     }
   else{
    toast.error("please input all fields")
@@ -65,7 +64,7 @@ if(password !== confirmPassword){
           <button><FaGoogle/> Register with google</button>
           <button><FaApple/> Register with Apple</button>
         </div>
-        <h3>Already have an account ? <a href="Login">Login</a></h3>
+        <h3>Already have an account ? <Link to="/Login">Login</Link></h3>
         <div className='thick-line'></div>
         
        </form>
@@ -73,7 +72,8 @@ if(password !== confirmPassword){
     
         </section>
 
-       )
+        )
+    }
 }
 
 

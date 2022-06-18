@@ -3,7 +3,7 @@ import './Login.css';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-//import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 const Login = () => {
@@ -29,7 +29,7 @@ const submitHandler=(e)=>{
    if(formValid){
     toast.success("welcome back");
     setTimeout(()=>{
-      window.location ="/" ;
+      window.location ="/index" ;
       },2000)
     }
 
@@ -56,7 +56,7 @@ const submitHandler=(e)=>{
           <button><FaGoogle/> Login with google</button>
           <button><FaApple/> Login with Apple</button>
         </div>
-        <h3>Dont have an account ? <a href="#">Register</a></h3>
+        <h3>Dont have an account ? <Link to="/Register">Register</Link></h3>
         <div className='thick-line'></div>
         
       </form>
