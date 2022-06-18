@@ -1,0 +1,23 @@
+.homepage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px;
+    position: relative;
+}
+
+
+@media (max-width: 668px){
+    .homepage{
+        justify-content: start;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (min-width:669px) and (max-width: 900px){
+    .homepage{
+        flex-direction: column;
+        gap: 60px;
+    }
+}
