@@ -1,0 +1,102 @@
+.main {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile{
+    background: rgba(232, 232, 232, 1);
+    padding: 10px 40px ;
+    width: 25%;
+}
+.profile-title h1 {
+    font-weight: lighter;
+    text-align: start;
+}
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.tasks-btns {
+    display: flex;
+    justify-content: space-between;
+}
+.tasks-btns button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background: rgba(244, 131, 25, 1);
+    border: none;
+    border-radius: 5px;
+}
+.settings-list {
+    list-style: none;
+    text-align: start;
+    margin-left: -35px;
+    margin-top: 30px;
+}
+.settings-list li h3,
+.settings-list li h4 {
+    font-weight: lighter;
+}
+.settings-list li:last-child h3 {
+    color: red;
+}
+.settings-boxes {
+    width: 30%;
+    margin-left: -150px;
+}
+.name-settings,
+.password-settings {
+    padding: 10px;
+    background-color: rgba(232, 232, 232, 1);
+    margin-top: 70px;
+    width: 100%;
+}
+.settings-title {
+    border-bottom: 1px solid gray;
+}
+.settings-title h1{
+    text-align: center;
+    font-weight: 600;
+}
+.new-input {
+    margin: 10px 5px;
+}
+.new-input input {
+    width: 95%;
+    background: rgba(232, 232, 232, 1);
+    padding: 10px;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.one {
+    background: rgba(232, 232, 232, 1);
+    color: rgba(244, 131, 25, 1);
+}
+.two {
+    color: white;
+    background: rgba(244, 131, 25, 1);
+}
+.new-input div {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.new-input div label {
+    margin-bottom: 20px;
+}
