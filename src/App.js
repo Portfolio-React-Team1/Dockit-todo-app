@@ -1,19 +1,25 @@
-import Calendar from './pages/Calendar/Calender'
 
-import './App.css';
-import Category from './pages/Category';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import IndexPage from './pages/Indexpage/IndexPage';
+import Sidebar from './pages/Sidebar/Sidebar';
+// import Category from './pages/Category';
+// import Cal from './pages/Calender/Calender'
+// import AddTask from './pages/Add-Task/AddTask';
+  //  import Landing from "./pages/Landing_page/Landing";
+
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div className='d-flex'>
+      <Router>
+        <Sidebar />
         <Routes>
-            <Route path="/calendar" element={<Calendar />}/>
-            <Route path="/category" element={<Category />}/>
+          <Route path="/index" element={<IndexPage />} ></Route>
+          {/* <Route path="/" element={<Landing />} ></Route> */}
+          {/* <Route path="/cal" element={<Cal />} ></Route> */}
+          {/* <Route path="/addtask" element={<AddTask />} ></Route> */}
+//            <Route path="/category" element={<Category />}/> 
         </Routes>
-      </BrowserRouter>
-
-     
+      </Router>
     </div>
   );
 }
