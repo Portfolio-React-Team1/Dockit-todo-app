@@ -7,12 +7,14 @@ import Sidebar from './pages/Sidebar/Sidebar';
   import Login from './pages/Login/Login';
   import Register from './pages/Register/Register';
 
+
 function App() {
   return (
     <div className='d-flex'>
       <Router>
         <Sidebar />
         <Routes>
+
            <Route path="/index" element={<IndexPage />} ></Route>
           {/* <Route path="/" element={<Landing />} ></Route> */}
           {/* <Route path="/cal" element={<Cal />} ></Route> */}
