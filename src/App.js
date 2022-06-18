@@ -17,7 +17,7 @@ function App() {
           {/* <Route path="/" element={<Landing />} ></Route> */}
           {/* <Route path="/cal" element={<Cal />} ></Route> */}
           {/* <Route path="/addtask" element={<AddTask />} ></Route> */}
-//            <Route path="/category" element={<Category />}/> 
+       {/* <Route path="/category" element={<Category />}/>  */}
         </Routes>
       </Router>
     </div>
