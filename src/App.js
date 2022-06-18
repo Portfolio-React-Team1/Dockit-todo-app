@@ -2,8 +2,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import IndexPage from './pages/Indexpage/IndexPage';
 import Sidebar from './pages/Sidebar/Sidebar';
-// import Category from './pages/Category';
-// import Cal from './pages/Calender/Calender'
+import CategoryPage from './pages/CategoryPage/CategoryPage';
+import HomePage from './pages/HomePage/HomePage';
+// import Cal from '../pages/Calender/Calender'
 // import AddTask from './pages/Add-Task/AddTask';
   //  import Landing from "./pages/Landing_page/Landing";
 
@@ -17,7 +18,8 @@ function App() {
           {/* <Route path="/" element={<Landing />} ></Route> */}
           {/* <Route path="/cal" element={<Cal />} ></Route> */}
           {/* <Route path="/addtask" element={<AddTask />} ></Route> */}
-//            <Route path="/category" element={<Category />}/> 
+           <Route path="/categoryPage" element={<CategoryPage />}/> 
+           <Route path="/home" element={<HomePage />}/> 
         </Routes>
       </Router>
     </div>
