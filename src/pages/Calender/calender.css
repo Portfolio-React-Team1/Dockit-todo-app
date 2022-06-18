@@ -1,0 +1,222 @@
+
+  .result-calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .react-calendar {
+    margin-top: 100px;
+    width: 27%;
+    background-color: rgb(230, 224, 224);
+    height: 40vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+
+  }
+
+  .react-calendar__navigation {
+    border-bottom: 2px solid rgb(193, 191, 191);
+
+  }
+
+  span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+    text-transform: uppercase;
+  }
+
+  .react-calendar__viewContainer {
+    margin-bottom: 20px;
+  }
+
+  .react-calendar__month-view__weekdays {
+    padding: 0px;
+    margin-top: -15px;
+    font-size: 65%;
+  }
+
+  .react-calendar__month-view__weekdays__weekday:last-child {
+    color: rgb(205, 13, 13);
+  }
+
+  .react-calendar__month-view__weekdays__weekday:nth-child(6) {
+    color: rgb(205, 13, 13);
+  }
+
+  .react-calendar__month-view__weekdays__weekday abbr {
+    text-decoration: none;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(3) abbr {
+
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(4) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(5) abbr{
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(6) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(7) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(8) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(9) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(10) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(11) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(12) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(13) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(14) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(15) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(16) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(17) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(18) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(19) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(20) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(21) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(22) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(23) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(24) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(25) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(26) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(27) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(28) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(29) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(30) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(31) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+  #root > div > div > div > div.react-calendar__viewContainer > div > div > div > div.react-calendar__month-view__days > button:nth-child(32) abbr {
+    background-color: rgb(234, 188, 195);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+
+
+
+
+  
+
+
+
+
+
+
+
