@@ -1,0 +1,109 @@
+.container {
+    width: 453px;
+    height: 520px;
+    background-color: rgba(232, 232, 232, 1);
+    /* margin-bottom: 16px; */
+    padding-top: 16px;
+    margin-top: 30px;
+}
+
+.header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150.5%;
+    color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 10px;
+}
+
+.border {
+    width: 370px;
+    border: 1px solid rgba(151, 151, 151, 1);
+    margin: 0 auto 15px auto;
+}
+
+.categorie {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 49px;
+    padding: 0 25px;
+}
+
+.CategorieText {
+    text-align: center;
+}
+
+.CategorieText p {
+    margin-top: -5px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150.5%;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 289px;
+    padding: 12px 0;
+    background: #F48319;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150.5%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+@media(max-width: 668px) {
+    .container {
+        width: 95%;
+        height: fit-content;
+        margin: 10px auto 30px auto;
+    }
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 22px;
+    }
+    .button {
+        width: 200px;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .CategorieText p {
+        width: 64px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .buttonContainer {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:669px) and (max-width: 900px) {
+    .container {
+        margin: 0 auto;
+    }
+}
