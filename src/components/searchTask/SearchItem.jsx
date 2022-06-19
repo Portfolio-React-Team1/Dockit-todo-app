@@ -1,4 +1,4 @@
-import './searchTask.css'
+import './searchTask.scss'
 
 const SearchItem = ({image, title, time, image1, flag, title2, id, color}) => {
    

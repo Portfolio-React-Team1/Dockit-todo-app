@@ -1,4 +1,4 @@
-import "./Onboarding.css";
+import "./Onboarding.scss";
 import Frame161 from "../../assets/images/frame-161-1.png";
 import Back from "./Links/Back";
 import Next from "./Links/Next";

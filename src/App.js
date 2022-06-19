@@ -3,12 +3,12 @@ import IndexPage from './pages/Indexpage/IndexPage';
 import Sidebar from './pages/Sidebar/Sidebar';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import HomePage from './pages/HomePage/HomePage';
-import Cal from './pages/Calender/Calender' 
+import Cal from './pages/Calendar/Calendar' 
 import AddTask from './pages/Add-Task/AddTask';
    import Landing from "./pages/Landing_page/Landing";
   import Login from './pages/Login/Login';
   import Register from './pages/Register/Register';
-  import './App.css'
+  import './App.scss'
 
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
 
            <Route path="/categoryPage" element={<CategoryPage />}/> 
            <Route path="/home" element={<HomePage />}/> 
-           <Route path="/Login" element={<Login />} ></Route> 
-           <Route path="/Register" element={<Register />} ></Route>
+           <Route path="/login" element={<Login />} ></Route> 
+           <Route path="/register" element={<Register />} ></Route>
 
         </Routes>
       </Router>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import CalendarButton from './CalendarButton';
-import './calender.css'
+import './calender.scss'
 
 
 
@@ -13,7 +13,7 @@ const Calender = () => {
 function onChange (calDate) {
   setCalDate(calDate)
 
-  const filteredResults = calDate.filter(result => {
+  calDate.filter(result => {
     const newResultFormat = new Date(result.created_at).toLocaleString().split(",")[0]
       const newCalDateFormat = calDate.toLocaleString().split(",")[0]
       return newResultFormat === newCalDateFormat
@@ -25,9 +25,8 @@ function onChange (calDate) {
     <div className="result-calendar">
      <Calendar onChange={onChange} value={calDate} />
      <CalendarButton />
-
     </div>
   )
 }
 
-export default Calender
+export default Calender;

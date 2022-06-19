@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import './Login.css';
+import './Login.scss';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

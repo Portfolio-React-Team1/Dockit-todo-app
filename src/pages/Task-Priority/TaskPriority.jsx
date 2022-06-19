@@ -1,7 +1,7 @@
 import React from 'react'
-import './taskpriority.css'
+import './taskpriority.scss'
 import { Container } from 'react-bootstrap'
-import Logo from './logo.png'
+import Logo from '../../assets/images/logo.png'
 import TaskPriorityButton from './TaskPriorityButton'
 
 

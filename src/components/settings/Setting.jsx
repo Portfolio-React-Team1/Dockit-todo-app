@@ -1,4 +1,6 @@
 import React from 'react'
+import './Settings.scss'
+import './Settings-module.scss'
 import arrowRight from '../../assets/images/arrow-left.svg'
 
 const Setting = ({text,image}) => {

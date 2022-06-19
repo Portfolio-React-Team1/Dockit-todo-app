@@ -1,6 +1,6 @@
 import React from 'react'
 import CategoryColors from './CategoryColors'
-import './createCategory.css'
+import './createCategory.scss'
 
 const CreateCategory = ({addCategorie,closeAddCategory}) => {
     const Categorycolors = [

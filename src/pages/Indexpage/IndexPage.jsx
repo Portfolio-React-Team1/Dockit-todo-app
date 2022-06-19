@@ -1,7 +1,7 @@
 import React from 'react'
 import Checklist from '../../assets/images/Checklist.png'
 import { Container, Row, Col } from 'react-bootstrap';
-import './indexpage.css';
+import './indexpage.scss';
 
 const IndexPage = () => {
   return (
