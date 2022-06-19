@@ -36,7 +36,9 @@ const AddTask = () => {
               </div>
 
               <div className='icon-section2 triple'>
+                 <a href='/cal'>
                   <BsTag className='icon'/>
+                 </a>
             </div>
             
             <div className='icon-section2 triple'>
