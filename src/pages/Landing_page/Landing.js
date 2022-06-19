@@ -1,9 +1,12 @@
-import React from 'react'
+import "./Landing.css";
+import Slider from "./Slider";
 
-const Landing = () => {
+function Landing() {
   return (
-    <div>Landing</div>
-  )
+    <div>
+      <Slider />
+    </div>
+  );
 }
 
-export default Landing
+
