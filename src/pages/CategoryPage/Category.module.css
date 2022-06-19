@@ -1,0 +1,22 @@
+.categoriesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    position: relative;
+}
+
+@media (max-width: 668px) {
+    .categoriesContainer {
+        justify-content: start;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (min-width:669px) and (max-width: 900px) {
+    .categoriesContainer {
+        flex-direction: column;
+        gap: 60px;
+    }
+}
