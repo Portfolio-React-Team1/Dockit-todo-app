@@ -19,8 +19,7 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-
-          <Route path="/index" element={<IndexPage />} ></Route>
+           <Route path="/index" element={<IndexPage />} ></Route>
           {/* <Route path="/" element={<Landing />} ></Route> */}
           {/*<Route path="/cal" element={<Cal />} ></Route>*/}
           {/* <Route path="/addtask" element={<AddTask />} ></Route> */}
@@ -34,7 +33,7 @@ function App() {
         </Routes>
       </Router>
 
-    </div>
+   </div>
   )
 }
 
