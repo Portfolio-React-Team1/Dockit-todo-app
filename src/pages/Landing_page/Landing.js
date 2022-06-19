@@ -1,4 +1,3 @@
-
 import "./Landing.css";
 import Slider from "./Slider";
 
@@ -9,3 +8,5 @@ function Landing() {
     </div>
   );
 }
+
+export default Landing;

@@ -1,15 +1,9 @@
-
-
-// import Cal from './pages/Calender/Calender'
-// import AddTask from './pages/Add-Task/AddTask';
-//    import Landing from "./pages/Landing_page/Landing";
-import './App.css';
+import "./App.css";
+import Landing from "./pages/Landing_page/Landing";
 function App() {
   return (
     <div className="App">
-    {/* <AddTask/> */}
-//      <Cal />
-//    <Landing />
+      <Landing />
     </div>
   );
 }
