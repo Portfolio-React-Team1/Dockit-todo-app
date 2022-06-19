@@ -19,6 +19,8 @@ function onChange (calDate) {
       const newCalDateFormat = calDate.toLocaleString().split(",")[0]
       return newResultFormat === newCalDateFormat
   })
+
+  console.log(filteredResults);
 }
 
   return (

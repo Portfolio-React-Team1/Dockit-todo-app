@@ -1,12 +1,14 @@
 import "./Landing.css";
-import Slider from "./Slider";
+// import Slider from "./Slider";
 
 function Landing() {
   return (
     <div>
-      <Slider />
+      {/* <Slider /> */}
     </div>
   );
 }
+
+export default Landing
 
 

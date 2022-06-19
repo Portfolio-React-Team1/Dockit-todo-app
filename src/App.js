@@ -5,10 +5,10 @@ import CategoryPage from './pages/CategoryPage/CategoryPage';
 import HomePage from './pages/HomePage/HomePage';
 import Cal from './pages/Calender/Calender' 
 import AddTask from './pages/Add-Task/AddTask';
-   import Landing from "./pages/Landing_page/Landing";
-  import Login from './pages/Login/Login';
-  import Register from './pages/Register/Register';
-  import './App.css'
+import Landing from "./pages/Landing_page/Landing";
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import './App.css'
 
 
 function App() {
