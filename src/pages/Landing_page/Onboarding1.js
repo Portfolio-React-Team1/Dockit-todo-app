@@ -1,9 +1,17 @@
-import "./Onboarding.css";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Group182 from "../../assets/images/group182.png";
-import Back from "./Links/Back";
-import Next from "./Links/Next";
+import "./Onboarding.css";
 
 function Onboarding1() {
+  const navigate = useNavigate();
+  const IntroPage = () => {
+    navigate("/");
+  };
+  const nextPage = () => {
+    navigate("/Onboarding2");
+  };
+
   return (
     <div className="container-center-horizontal">
       <div className="onboarding-screen">
@@ -27,8 +35,15 @@ function Onboarding1() {
           </span>{" "}
         </p>
         <div className="flex-row">
-          <Back />
-          <Next />
+          <div className="screen-end-links" onClick={IntroPage}>
+            {" "}
+            <span className="back">Back</span>{" "}
+          </div>
+          <div className="frame-121">
+            <div className="next" onClick={nextPage}>
+              <span> Next</span>
+            </div>
+          </div>
         </div>
         <div className="navi">
           <div className="rectangle-90"> </div>
