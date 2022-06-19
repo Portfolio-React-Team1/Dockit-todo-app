@@ -1,0 +1,118 @@
+/* Task Priority */
+.page{
+position: relative;
+width: 836px;
+height: 900px;
+background: #FFFFFF;
+}
+
+/* Edit Task Priority */
+
+.edit{
+position: absolute;
+width: 391.49px;
+height: 431px;
+left: 524px;
+top: 250px;
+background: #E8E8E8;
+border-radius: 4px;
+}
+
+.text{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+letter-spacing: -0.5px;
+color: rgba(0, 0, 0, 0.87);
+}
+
+.CardLink{
+color: #F48319;
+text-decoration: underline;
+margin-left: 1rem;     
+width: 48px;
+height: 24px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150.5%;
+}
+
+
+
+ .rec1{
+position: absolute;
+width: 76.62px;
+height: 76.62px;
+left: 537.17px;
+top: 371.23px;
+ }
+
+ .grid-container {
+    display: grid;
+    gap: 25px 25px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background: rgba(244, 131, 25, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px; 
+    text-align: center;
+    border-radius: 4px;   
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 2em
+  }
+  .grid-item-vic {
+    background-color: #F48319;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px; 
+    text-align: center;
+    border-radius: 4px;   
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  padding-top: 2em
+  }
+   
+.image{
+    width: 25px;
+    height: 25px;
+    background-image:url(https://www.dropbox.com/s/xew0k8rnujqu6pt/logo.png?dl=0);
+    background-repeat: no-repeat;
+    background-size: contain;
+  position: absolute;
+  top: 75px;
+}
+.image2{
+  width: 25px;
+  height: 25px;
+  background-image:url(https://www.dropbox.com/s/xew0k8rnujqu6pt/logo.png?dl=0);
+  background-repeat: no-repeat;
+  background-size: contain;
+position: absolute;
+top: 175px;
+}
+
+.image3{
+  width: 25px;
+  height: 25px;
+  background-image:url(https://www.dropbox.com/s/xew0k8rnujqu6pt/logo.png?dl=0);
+  background-repeat: no-repeat;
+  background-size: contain;
+position: absolute;
+top: 275px;
+}
+
+  

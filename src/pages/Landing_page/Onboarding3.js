@@ -1,5 +1,7 @@
 import "./Onboarding.css";
 import Frame161 from "../../assets/images/frame-161-1.png";
+import Back from "./Links/Back";
+import Next from "./Links/Next";
 
 function Onboarding3() {
   return (
@@ -26,14 +28,8 @@ function Onboarding3() {
           </span>{" "}
         </p>
         <div className="flex-row">
-          <div className="screen-end-links">
-            <span className="back">Back</span>
-          </div>
-          <div className="frame-121">
-            <div className="get-started">
-              <span> Get Started </span>
-            </div>
-          </div>
+          <Back />
+          <Next />
         </div>
         <div className="navi">
           <div className="rectangle-90"> </div>

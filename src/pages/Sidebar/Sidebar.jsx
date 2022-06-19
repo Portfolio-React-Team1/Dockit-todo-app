@@ -1,6 +1,6 @@
 import {
-    CDBSidebar,
-    CDBSidebarContent,
+  CDBSidebar,
+  CDBSidebarContent,
   //   CDBSidebarFooter,
     CDBSidebarHeader,
     CDBSidebarMenu,
@@ -26,13 +26,13 @@ import {
                   <a href='/categoryPage'><CDBSidebarMenuItem  icon="table">Category</CDBSidebarMenuItem></a>
                   {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}
-                  <a href='/'><CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem></a>
-                  {/* <NavLink exact to="/" activeClassName="activeClicked">
+              <a href='/'><CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem></a>
+              {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}
-              </CDBSidebarMenu>
-              </CDBSidebarContent>
-  
-              {/* <CDBSidebarFooter style={{ textAlign: 'center' }}>
+            </CDBSidebarMenu>
+          </CDBSidebarContent>
+
+          {/* <CDBSidebarFooter style={{ textAlign: 'center' }}>
               <div
                   style={{
                   padding: '20px 5px',
@@ -41,11 +41,10 @@ import {
                   Sidebar Footer
               </div>
               </CDBSidebarFooter> */}
-          </CDBSidebar>
-          </div>
+        </CDBSidebar>
       </div>
-    );
-  }
-  
-  export default Sidebar;
-  
+    </div>
+  );
+}
+
+export default Sidebar;

@@ -17,7 +17,6 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-
            <Route path="/index" element={<IndexPage />} ></Route>
           <Route path="/landing" element={<Landing />} ></Route>
           <Route path="/cal" element={<Cal />} ></Route>
@@ -31,7 +30,7 @@ function App() {
         </Routes>
       </Router>
 
-    </div>
+   </div>
   )
 }
 
