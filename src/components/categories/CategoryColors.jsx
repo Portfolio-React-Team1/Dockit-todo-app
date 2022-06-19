@@ -1,5 +1,5 @@
 import React from 'react'
-import './createCategory.css'
+import './createCategory.scss'
 
 const CategoryColors = ({colors}) => {
 

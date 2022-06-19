@@ -6,7 +6,7 @@ import homeIcon from '../../assets/images/homeIcon.svg'
 import flag from '../../assets/images/flag.svg'
 import searchIcon from '../../assets/images/search-normal.svg'
 import SearchItem from './SearchItem'
-import './searchTask.css'
+import './searchTask.scss'
 
 
 const SearchTasks = () => {

@@ -1,3 +1,5 @@
+//eslint-disable-next-line@typescript-eslint/ban-ts-comment
+//@ts-ignore
 import {
   CDBSidebar,
   CDBSidebarContent,
@@ -7,7 +9,7 @@ import {
     CDBSidebarMenuItem,
   } from 'cdbreact';
 
-  import './sidebar.css'
+  import './sidebar.scss'
   
   function Sidebar() {
     return (

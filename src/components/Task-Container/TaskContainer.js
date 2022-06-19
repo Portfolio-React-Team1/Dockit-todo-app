@@ -1,5 +1,5 @@
 import React from 'react'
-import './TaskContainer.css'
+import './TaskContainer.scss'
 import picture from '../../assets/images/picture.png'
 
 const TaskContainer = () => {

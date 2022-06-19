@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from './categorie.module.css'
+import styles from './categorie.module.scss'
+
 const Categorie = ({image,text, color, margin,callback,index}) => {
   return (
     <div className={styles.CategorieText} onClick={()=>index===10&&callback()}>

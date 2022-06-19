@@ -2,7 +2,7 @@ import React from 'react'
 import Categories from '../../components/categories/Categories'
 import CreateCategory from '../../components/categories/CreateCategory'
 import Settings from '../../components/settings/Settings'
-import styles from "./Category.module.css"
+import styles from "./Category.module.scss"
 
 
 
