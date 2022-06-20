@@ -1,5 +1,6 @@
 import React from 'react'
-import  './Settings.css'
+import  './Settings.scss'
+import './Settings-module.scss'
 import brush from '../../assets/images/brush.svg'
 import text from '../../assets/images/text.svg'
 import language from '../../assets/images/language-square.svg'

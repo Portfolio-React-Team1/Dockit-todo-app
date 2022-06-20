@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './categorie.module.css'
+import styles from './categorie.module.scss'
 import Categorie from './Categorie'
 // import CreateCategory from './CreateCategory'
 import categorie1 from '../../assets/images/category1.svg'

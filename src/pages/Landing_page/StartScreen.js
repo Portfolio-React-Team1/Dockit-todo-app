@@ -1,5 +1,5 @@
 import React from "react";
-import "./StartScreen.css";
+import "./StartScreen.scss";
 import BackButton from "../../assets/images/back-button.png";
 
 function StartScreen() {

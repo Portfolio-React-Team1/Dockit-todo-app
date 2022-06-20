@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchTasks from '../../components/searchTask/SearchTasks'
 import Settings from '../../components/settings/Settings'
-import './homepage.css'
+import './homepage.scss'
 const HomePage = () => {
   return (
     <div className='homepage'>

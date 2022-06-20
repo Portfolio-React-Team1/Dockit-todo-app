@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-import './calendarbutton.css'
+import './calendarbutton.scss'
 
 const CalendarButton = () => {
   return (
     <div className='calendar-button-container'>
         <div className='cancel-button'>
         <button>
-          <a href='/#' rel="noreferrer"> cancel</a>
+          <a href='/' rel="noreferrer"> cancel</a>
         </button>
         </div>
         <div className='calender-button'>
