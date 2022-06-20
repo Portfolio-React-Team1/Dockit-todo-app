@@ -1,7 +1,5 @@
 import React from "react";
-
-import { useNavigate } from "react-router-dom";
-import "./StartScreen.css";
+import "./StartScreen.scss";
 import BackButton from "../../assets/images/back-button.png";
 
 function StartScreen() {

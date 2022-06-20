@@ -1,6 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Onboarding.css";
+import "./Onboarding.scss";
 import Group183 from "../../assets/images/group183.png";
 function Onboarding2() {
   const navigate = useNavigate();

@@ -1,3 +1,5 @@
+//eslint-disable-next-line@typescript-eslint/ban-ts-comment
+//@ts-ignore
 import {
   CDBSidebar,
   CDBSidebarContent,
@@ -7,10 +9,19 @@ import {
   CDBSidebarMenuItem,
 } from "cdbreact";
 
+import "./sidebar.scss";
+
 function Sidebar() {
   return (
-    <div>
-      <div style={{ height: "100vh", overflow: "scroll initial" }}>
+    <div className="index-container">
+      <div
+        style={{
+          height: "100vh",
+          overflow: "scroll initial",
+          margin: "0",
+          padding: "0",
+        }}
+      >
         <CDBSidebar
           textColor="#fff"
           backgroundColor="#F48319"
@@ -19,7 +30,7 @@ function Sidebar() {
         >
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
             <a
-              href="/"
+              href="/home"
               className="text-decoration-none"
               style={{ color: "inherit" }}
             >
@@ -29,20 +40,13 @@ function Sidebar() {
 
           <CDBSidebarContent className="sidebar-content pt-0">
             <CDBSidebarMenu>
-              <a href="/">
+              <a href="/index">
                 <CDBSidebarMenuItem icon="home">Index</CDBSidebarMenuItem>
               </a>
               {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}
-              <a href="/Landing">
-                <CDBSidebarMenuItem icon="">Welcome</CDBSidebarMenuItem>
-              </a>
-              {/* <NavLink exact to="/" activeClassName="activeClicked">
-                  </NavLink> */}
-              <a href="/">
-                <CDBSidebarMenuItem icon="calendar">
-                  Calendar
-                </CDBSidebarMenuItem>
+              <a href="/categoryPage">
+                <CDBSidebarMenuItem icon="table">Category</CDBSidebarMenuItem>
               </a>
               {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}

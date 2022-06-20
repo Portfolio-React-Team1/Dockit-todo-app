@@ -1,6 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Onboarding.css";
+import "./Onboarding.scss";
 import Frame161 from "../../assets/images/frame-161-1.png";
 
 function Onboarding3() {

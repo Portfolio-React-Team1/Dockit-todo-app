@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../Login/Login.css';
+import '../Login/Login.scss';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,7 +29,7 @@ if(password !== confirmPassword){
   }
 
   if(userName && password && formValid){
-    toast.success("WELCOME " + ` ${userName}`)
+    toast.success("WELCOME ", + ` ${userName}`)
        setTimeout(()=>{
         window.location='/index';
     
@@ -37,12 +37,13 @@ if(password !== confirmPassword){
     }
   else{
    toast.error("please input all fields")
- }
+ };
+}
 
    return (
    <section className='register-page'>
     <ToastContainer/>
-      <form onSubmit={submitHandler}> 
+      <form onSubmit={ submitHandler }> 
       <FaChevronLeft />
        <h1>Register</h1>
         <label>Username</label>
@@ -74,7 +75,6 @@ if(password !== confirmPassword){
 
         )
     }
-}
 
 
 
