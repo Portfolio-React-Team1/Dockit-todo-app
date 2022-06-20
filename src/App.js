@@ -8,6 +8,7 @@ import AddTask from './pages/Add-Task/AddTask';
 import Landing from "./pages/Landing_page/Landing";
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import ChooseTime from './pages/Choose-Time/ChooseTime';
 import './App.css'
 
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/landing" element={<Landing />} ></Route>
           <Route path="/cal" element={<Cal />} ></Route>
           <Route path="/addtask" element={<AddTask />} ></Route>
-
+          <Route path="/choosetime" element={<ChooseTime />} ></Route>
            <Route path="/categoryPage" element={<CategoryPage />}/> 
            <Route path="/home" element={<HomePage />}/> 
            <Route path="/Login" element={<Login />} ></Route> 
