@@ -1,4 +1,4 @@
-import "./Landing.css";
+import "./Landing.scss";
 import Slider from "./Slider";
 
 function Landing() {
@@ -9,4 +9,4 @@ function Landing() {
   );
 }
 
-
+export default Landing;

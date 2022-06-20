@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import './Login.css';
+import './Login.scss';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,7 +17,6 @@ const [form,setForm] = useState({
   setForm({
       ...form,
      [e.target.name] : e.target.value })
- 
  };
 
 const submitHandler=(e)=>{
@@ -31,7 +30,7 @@ const submitHandler=(e)=>{
           },2000);
         }
          else{
-            setFormValid(false);
+            setFormValid(false, formValid);
             toast.error("please input all fields")
            
            }

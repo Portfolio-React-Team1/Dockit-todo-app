@@ -1,4 +1,4 @@
-import "./Links.css";
+import './Links.scss'
 
 function Back() {
   return (

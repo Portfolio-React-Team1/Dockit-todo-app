@@ -1,6 +1,6 @@
 import React from 'react'
 // import TaskContainer from '../../components/Task-Container/TaskContainer'
-import './AddTask.css'
+import './AddTask.scss'
 import picture from '../../assets/images/picture.png'
 import { BsClock, BsTag } from "react-icons/bs";
 import { SiAirbnb } from "react-icons/si";
@@ -36,7 +36,9 @@ const AddTask = () => {
               </div>
 
               <div className='icon-section2 triple'>
+                 <a href='/cal'>
                   <BsTag className='icon'/>
+                 </a>
             </div>
             
             <div className='icon-section2 triple'>

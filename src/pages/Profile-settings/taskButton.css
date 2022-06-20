@@ -1,0 +1,61 @@
+.calendar-button-container {
+   
+    width: 27%;
+    height: 13vh;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cancel-button  {
+    margin-top: -10px;
+    margin-left: 5em;
+}
+
+.cancel-button button {
+    border: 1px;
+    background-color: rgb(230, 224, 224);
+}
+
+.cancel-button button a  {
+    position: absolute;
+    text-decoration: none;
+    font-size: 110%;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: rgb(222, 152, 23);
+}
+
+
+
+.calender-button {
+    margin-top: -12px;
+    margin-bottom: 2em;
+    margin-left: 8em;
+}
+
+.calender-button button {
+    background-color: rgb(246, 162, 6);
+    border: 1px;;
+    border-radius: 5px;
+    padding: 10px 10px;
+    position: absolute;
+    width: 100px;
+    
+}
+
+.calender-button button a  {
+    color: #000;
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 110%;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    
+    
+}

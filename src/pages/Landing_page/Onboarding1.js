@@ -1,4 +1,4 @@
-import "./Onboarding.css";
+import "./Onboarding.scss";
 import Group182 from "../../assets/images/group182.png";
 import Back from "./Links/Back";
 import Next from "./Links/Next";
