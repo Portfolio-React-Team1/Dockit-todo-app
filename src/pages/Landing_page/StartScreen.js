@@ -3,10 +3,6 @@ import "./StartScreen.scss";
 import BackButton from "../../assets/images/back-button.png";
 
 function StartScreen() {
-  const navigate = useNavigate();
-  const backPage = () => {
-    navigate("/");
-  };
   return (
     <div className="container-center-horizontal">
       <div className="start-screen">

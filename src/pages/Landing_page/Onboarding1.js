@@ -1,9 +1,13 @@
+import React from "react";
 import "./Onboarding.scss";
 import Group182 from "../../assets/images/group182.png";
-import Back from "./Links/Back";
-import Next from "./Links/Next";
+import Onboarding2 from "./Onboarding2";
 
-function Onboarding1() {
+export default function Onboarding1() {
+  const [showNextPage, setShowNextPage] = React.useState(false);
+  function changePage() {
+    setShowNextPage(!showNextPage);
+  }
   return (
     <div className="container-center-horizontal">
       <div className="onboarding-screen">
@@ -27,8 +31,18 @@ function Onboarding1() {
           </span>{" "}
         </p>
         <div className="flex-row">
-          <Back />
-          <Next />
+          <div className="screen-end-links">
+            {" "}
+            <span className="back">Back</span>{" "}
+          </div>
+          <div className="frame-121">
+            {!showNextPage && (
+              <div className="next" onClick={changePage}>
+                <span> Next</span>{" "}
+              </div>
+            )}
+            {showNextPage && <Onboarding2 />}
+          </div>
         </div>
         <div className="navi">
           <div className="rectangle-90"> </div>
@@ -37,4 +51,3 @@ function Onboarding1() {
     </div>
   );
 }
-export default Onboarding1;

@@ -1,13 +1,8 @@
+import React from "react";
 import "./Onboarding.scss";
 import Group183 from "../../assets/images/group183.png";
+
 function Onboarding2() {
-  const navigate = useNavigate();
-  const backPage = () => {
-    navigate("/Onboarding1");
-  };
-  const nextPage = () => {
-    navigate("/Onboarding3");
-  };
   return (
     <div className="container-center-horizontal">
       <div className="onboarding-screen">
@@ -32,12 +27,12 @@ function Onboarding2() {
           </span>{" "}
         </p>
         <div className="flex-row">
-          <div className="screen-end-links" onClick={backPage}>
+          <div className="screen-end-links">
             {" "}
             <span className="back">Back</span>{" "}
           </div>
           <div className="frame-121">
-            <div className="next" onClick={nextPage}>
+            <div className="next">
               <span> Next</span>
             </div>
           </div>
