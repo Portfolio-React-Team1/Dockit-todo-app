@@ -6,12 +6,7 @@ function StartScreen() {
   return (
     <div className="container-center-horizontal">
       <div className="start-screen">
-        <img
-          className="back-button"
-          src={BackButton}
-          alt="busy man"
-          onClick={backPage}
-        />
+        <img className="back-button" src={BackButton} alt="busy man" />
         <h1 className="start-screen-title">
           <span> Welcome to Dockit</span>
         </h1>
