@@ -7,9 +7,11 @@ form{
 width: 400px;
 padding: 15px;
 display: flex;
-margin: 5px auto 0;
+margin: 5px auto;
 flex-direction: column;
-gap:10px;}
+overflow: hidden;
+gap:10px;
+}
  .form-btn{
     background-color: #f7a253;
     color: #fff;
@@ -36,7 +38,7 @@ label{
     font-size: 28px;
     font-weight: 800;
     color: black;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 .or{
     display: flex;
@@ -61,11 +63,11 @@ width:36%;
     font-weight: bold;
 }
 .thick-line{
-    width: 180px;
+    width: 134px;
     background-color: black;
-    height:10px;
+    height:5px;
     border-radius: 10px;
-    margin-left: 45px;
+    margin-left: 75px;
 }
 form a{
     color:black;

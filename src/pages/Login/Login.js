@@ -19,6 +19,7 @@ const [form,setForm] = useState({
      [e.target.name] : e.target.value })
  
  };
+const url= "https://todo22a.herokuapp.com/api/v1/user/login";
 
 const submitHandler=(e)=>{
   e.preventDefault();
@@ -29,6 +30,12 @@ const submitHandler=(e)=>{
          setTimeout(()=>{
          window.location ="/index" ;
           },2000);
+          fetch(url, {
+            method:'POST',
+            headers:{'Content-Type': 'application/json'},
+            body: JSON.stringify(form)
+           }).then(()=> console.log("user Logged in"));
+
         }
          else{
             setFormValid(false);
@@ -39,12 +46,11 @@ const submitHandler=(e)=>{
     }
 
 
-
   return (
    <section className='login-page'>
       <ToastContainer/>
       <form onSubmit={submitHandler}> 
-         <Link to="/"><FaChevronLeft/></Link> 
+         <FaChevronLeft />
            <h1>Login</h1>
             <label>Username</label>
             <input type="text" name='username' placeholder='enter username' onChange={handleChange}/>
@@ -61,7 +67,7 @@ const submitHandler=(e)=>{
               <button><FaGoogle/> Login with google</button>
               <button><FaApple/> Login with Apple</button>
              </div>
-            <h3>Dont have an account ? <Link to="/Register">Register</Link></h3>
+            <h4>Dont have an account ? <Link to="/Register">Register</Link></h4>
             <div className='thick-line'></div>
         
       </form>
