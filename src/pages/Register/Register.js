@@ -14,24 +14,35 @@ const Register = () => {
   confirmPassword: ""
    });
 
+
 const handleChange=(e)=>{
   setForm({
     ...form ,[e.target.name]: e.target.value })
 
 };
 
+
+const url= "https://todo22a.herokuapp.com/api/v1/user/register";
+
 const submitHandler=(e)=>{
      e.preventDefault();
+  
      if( form.username !== "" &&
          form.password !== "" && 
          form.confirmPassword !== ""
      ){ 
           setFormValid(true);
-          sessionStorage.setItem("userDetails", JSON.stringify({...form}))
-          toast.success(`Welcome to DockIt  ${form.username}`);
+          sessionStorage.setItem("userDetails", JSON.stringify({...form}));
+         toast.success(`Welcome to DockIt  ${form.username}`);
           setTimeout(()=>{
                 window.location="/index";
-               },2000 );
+               },3000 );
+               fetch(url, {
+                method:'POST',
+                headers:{'Content-Type': 'application/json'},
+                body: JSON.stringify(form)
+               }).then(()=> console.log("user added"));
+
 
         }else if(form.password !== form.confirmPassword){
            setFormValid(false);
@@ -48,12 +59,11 @@ const submitHandler=(e)=>{
 
   }
 
-
    return (
    <section className='register-page'>
     <ToastContainer/>
       <form onSubmit={submitHandler}> 
-            <Link to="/"><FaChevronLeft /></Link>  
+            <FaChevronLeft />
             <h1>Register</h1>
              <label>Username</label>
              <input type="text" name='username'placeholder='enter username' onChange={handleChange} />
@@ -63,8 +73,9 @@ const submitHandler=(e)=>{
             
              <label>Confirm Password</label>
              <input type="password" name='confirmPassword' placeholder='......'  onChange={handleChange} />
-            
-             <button className='form-btn' >Register</button>
+            {!formValid  && <button className='form-btn' >Register</button> }
+            {formValid  && <button disabled className='form-btn' >Registering...</button> }
+             
      
              <div className='or'>
                 <div className='line'></div><h3>or</h3><div className='line'></div>
@@ -74,7 +85,7 @@ const submitHandler=(e)=>{
                <button><FaGoogle/> Register with google</button>
                <button><FaApple/> Register with Apple</button>
              </div>
-             <h3>Already have an account ? <Link to="/Login">Login</Link></h3>
+             <h4>Already have an account ? <Link to="/Login">Login</Link></h4>
              <div className='thick-line'></div>
         
        </form>

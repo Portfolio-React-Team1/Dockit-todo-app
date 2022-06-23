@@ -7,7 +7,7 @@ import './calender.css'
 
 
 const Calender = () => {
-  // set states of calendar date
+  // set states of calendar date 
   const [calDate, setCalDate] = useState(new Date())
 
 function onChange (calDate) {
