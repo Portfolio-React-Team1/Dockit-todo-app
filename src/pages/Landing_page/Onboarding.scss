@@ -13,27 +13,42 @@
   background-color: #ffffff;
   height: 812px;
   width: 375px;
+
+  @media (min-width: 600px) {
+    height: 1024px;
+    padding: 80px 90px;
+    width: 1440px;
+    flex-direction: column;
+  }
 }
 .skip {
-  align-self: flex-start;
-  text-align: left;
-  letter-spacing: 0;
-  margin-top: 58px;
-  min-height: 24px;
+  line-height: 24px;
   white-space: nowrap;
   color: rgba(0, 0, 0, 1);
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  margin: auto;
+  top: 58px;
+
+  @media (min-width: 600px) {
+    width: 34px;
+    margin-left: 90px;
+    margin-top: 92px;
+  }
 }
 
 .group-image {
   height: 278px;
-  margin-left: 0;
-  margin-top: 2px;
+  margin-left: 81px;
+  margin-top: 84px;
   width: 210px;
+
+  @media (min-width: 600px) {
+    width: 213px;
+    margin-left: 614px;
+    margin-top: 235px;
+  }
 }
 
 .navi {
@@ -42,6 +57,12 @@
   min-width: 95px;
   margin-left: 143px;
   margin-top: 51px;
+
+  @media (min-width: 600px) {
+    width: 94px;
+    margin-left: 673px;
+    top: 564px;
+  }
 }
 
 .rectangle-100 {
@@ -65,11 +86,17 @@
   margin-right: 2px;
   margin-top: 50px;
   min-height: 50px;
-  min-width: 267px;
   font-size: 32px;
+  margin-left: 53px;
   color: rgba(0, 0, 0, 0.871);
   font-style: normal;
   font-weight: 700;
+
+  @media (min-width: 600px) {
+    line-height: 38px;
+    margin-left: 597px;
+    top: 618px;
+  }
 }
 
 .app-text {
@@ -80,23 +107,29 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.87);
   margin-right: 2px;
-  margin-top: 20px;
+  margin-top: 42px;
   min-height: 50px;
   min-width: 267px;
+  white-space: nowrap;
+
+  @media (min-width: 600px) {
+    margin-left: 200px;
+    top: 676px;
+    text-align: center;
+    column-gap: 1000px;
+  }
 }
 .flex-row {
   align-items: center;
   display: flex;
   margin-top: 110px;
   min-width: 327px;
+
+  @media (min-width: 600px) {
+    padding: 30px;
+  }
 }
 
-.get-started {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-}
 .screen-end-links,
 .next {
   letter-spacing: 0;
@@ -106,6 +139,7 @@
   white-space: nowrap;
   margin: auto;
 }
+
 .back,
 .next {
   font-style: normal;
@@ -116,6 +150,9 @@
 
 .back {
   color: #000000;
+  @media (min-width: 600px) {
+    margin-right: 800px;
+  }
 }
 .frame-121 {
   color: #ffffff;
@@ -131,7 +168,6 @@
   justify-content: center;
 }
 
-
 .rectangle-90 {
   width: 134px;
   height: 5px;
@@ -140,4 +176,8 @@
   background: #000000;
   border-radius: 36px;
   left: 121px;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
 }

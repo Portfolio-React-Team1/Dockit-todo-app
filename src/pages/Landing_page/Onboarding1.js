@@ -5,11 +5,11 @@ import Onboarding2 from "./Onboarding2";
 
 export default function Onboarding1() {
   const [showNextPage, setShowNextPage] = React.useState(false);
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     setInterval(() => {
       setShowNextPage(true);
     }, 7000);
-  }, []);
+  }, []);*/
   function changePage() {
     setShowNextPage(true);
   }

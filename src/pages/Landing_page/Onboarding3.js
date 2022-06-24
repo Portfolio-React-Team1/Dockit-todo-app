@@ -2,13 +2,15 @@ import React from "react";
 import "./Onboarding.scss";
 import Frame161 from "../../assets/images/frame-161-1.png";
 import StartScreen from "./StartScreen";
+import Skip from "./Links/Skip";
 function Onboarding3() {
   const [showNextPage, setShowNextPage] = React.useState(false);
-  React.useEffect(() => {
-    setInterval(() => {
+  /*React.useEffect(() => {
+    setTimeout(() => {
       setShowNextPage(true);
     }, 7000);
-  }, []);
+  }, []);*/
+
   function changePage() {
     setShowNextPage(true);
   }
@@ -16,9 +18,7 @@ function Onboarding3() {
     <div className="container-center-horizontal">
       {!showNextPage && (
         <div className="onboarding-screen">
-          <div className="skip">
-            <span> Skip</span>
-          </div>
+          <Skip />
           <img className="group-image" src={Frame161} alt="busy man" />
           <div className="navi">
             <div className="rectangle-10"> </div>

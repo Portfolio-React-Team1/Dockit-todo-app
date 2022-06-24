@@ -13,6 +13,12 @@
   flex-direction: column;
   height: 812px;
   width: 375px;
+  @media (min-width: 600px) {
+    height: 1024px;
+    padding: 80px 90px;
+    width: 1440px;
+    flex-direction: column;
+  }
 }
 .back-button {
   align-self: flex-start;
@@ -30,7 +36,7 @@
   color: rgba(0, 0, 0, 0.871);
 }
 
-.app-text {
+.start-screen .text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

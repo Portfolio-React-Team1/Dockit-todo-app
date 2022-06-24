@@ -2,14 +2,16 @@ import React from "react";
 import "./Onboarding.scss";
 import Group183 from "../../assets/images/group183.png";
 import Onboarding3 from "./Onboarding3";
+import Skip from "./Links/Skip";
 
 function Onboarding2() {
   const [showNextPage, setShowNextPage] = React.useState(false);
-  React.useEffect(() => {
-    setInterval(() => {
+  /*React.useEffect(() => {
+    setTimeout(() => {
       setShowNextPage(true);
-    }, 7000);
-  }, []);
+    }, 3000);
+  }, []);*/
+
   function changePage() {
     setShowNextPage(true);
   }
@@ -17,9 +19,7 @@ function Onboarding2() {
     <div className="container-center-horizontal">
       {!showNextPage && (
         <div className="onboarding-screen">
-          <div className="skip">
-            <span> Skip</span>
-          </div>
+          <Skip />
           <img className="group-image" src={Group183} alt="busy man" />
           <div className="navi">
             <div className="rectangle-10"> </div>

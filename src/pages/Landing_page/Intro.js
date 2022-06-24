@@ -6,7 +6,7 @@ import Onboarding1 from "./Onboarding1";
 export default function Intro() {
   const [showNextPage, setShowNextPage] = React.useState(false);
   React.useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setShowNextPage(true);
     }, 3000);
   }, []);

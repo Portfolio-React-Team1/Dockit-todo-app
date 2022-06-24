@@ -5,9 +5,7 @@ import Intro from "./Intro";
 function Landing() {
   return (
     <div>
-      <div>
-        <Intro />
-      </div>
+      <>{<Intro />}</>
     </div>
   );
 }
