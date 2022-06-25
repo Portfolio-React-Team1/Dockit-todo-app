@@ -1,7 +1,6 @@
 /* Task Priority */
 .page{
-position: relative;
-width: 836px;
+position: absolute;
 height: 900px;
 background: #FFFFFF;
 }
@@ -11,7 +10,7 @@ background: #FFFFFF;
 .edit{
 position: absolute;
 width: 391.49px;
-height: 431px;
+height: 450px;
 left: 524px;
 top: 250px;
 background: #E8E8E8;
@@ -93,7 +92,7 @@ top: 371.23px;
     background-repeat: no-repeat;
     background-size: contain;
   position: absolute;
-  top: 75px;
+  top: 90px;
 }
 .image2{
   width: 25px;
@@ -102,7 +101,7 @@ top: 371.23px;
   background-repeat: no-repeat;
   background-size: contain;
 position: absolute;
-top: 175px;
+top: 190px;
 }
 
 .image3{
@@ -112,7 +111,7 @@ top: 175px;
   background-repeat: no-repeat;
   background-size: contain;
 position: absolute;
-top: 275px;
+top: 290px;
 }
 
   

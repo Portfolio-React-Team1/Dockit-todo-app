@@ -3,22 +3,21 @@ import IndexPage from './pages/Indexpage/IndexPage';
 import Sidebar from './pages/Sidebar/Sidebar';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import HomePage from './pages/HomePage/HomePage';
-import Cal from './pages/Calendar/Calendar' 
+import Cal from './pages/Calendar/Calendar'
+import TaskPriority from './pages/Task-Priority/TaskPriority';
 import AddTask from './pages/Add-Task/AddTask';
    import Landing from "./pages/Landing_page/Landing";
   import Login from './pages/Login/Login';
   import Register from './pages/Register/Register';
   import './App.scss';
   import ChooseTime from './pages/Choose-Time/ChooseTime';
-
-
 function App() {
   return (
     <div className='d-flex'>
       <Router>
         <Sidebar />
         <Routes>
-           <Route path="/index" element={<IndexPage />} ></Route>
+          <Route path="/index" element={<IndexPage />} ></Route>
           <Route path="/landing" element={<Landing />} ></Route>
           <Route path="/cal" element={<Cal />} ></Route>
           <Route path="/addtask" element={<AddTask />} ></Route>
@@ -31,7 +30,7 @@ function App() {
         </Routes>
       </Router>
 
-   </div>
+    </div>
   )
 }
 
