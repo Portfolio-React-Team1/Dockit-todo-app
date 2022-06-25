@@ -1,5 +1,6 @@
-import "./Intro.css";
+import "./Intro.scss";
 import Logo from "../../assets/images/dock-it-logo.png";
+
 export default function Intro() {
   return (
     <div className="container-center-horizontal">

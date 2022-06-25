@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../Login/Login.css';
+import '../Login/Login.scss';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -39,15 +39,22 @@ const submitHandler=(e)=>{
                },3000 );
                fetch(url, {
                 method:'POST',
-                headers:{'Content-Type': 'application/json'},
-                body: JSON.stringify(form)
-               }).then(()=> console.log("user added"));
+                headers:{'Content-Type': 'application/json; charset-UTF-8'},
+                body: JSON.stringify({
+                  username: form.username,
+                  password: form.password,
+                  userId: Math.random().toString(36).slice(2),
+                })
+               }).then((res)=> res.json())
+               .then((data)=> {
+                setForm((form)=> [data, ...form])
+               }).catch((err)=> console.log(err.message))
 
 
         }else if(form.password !== form.confirmPassword){
            setFormValid(false);
            toast.error("passwords do not match")
-
+ 
          }
        
        else{
@@ -62,6 +69,7 @@ const submitHandler=(e)=>{
    return (
    <section className='register-page'>
     <ToastContainer/>
+
       <form onSubmit={submitHandler}> 
             <FaChevronLeft />
             <h1>Register</h1>
@@ -87,7 +95,7 @@ const submitHandler=(e)=>{
              </div>
              <h4>Already have an account ? <Link to="/Login">Login</Link></h4>
              <div className='thick-line'></div>
-        
+
        </form>
 
     
@@ -95,8 +103,5 @@ const submitHandler=(e)=>{
 
         )
     }
-
-
-
 
 export default Register
