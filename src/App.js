@@ -8,7 +8,8 @@ import AddTask from './pages/Add-Task/AddTask';
    import Landing from "./pages/Landing_page/Landing";
   import Login from './pages/Login/Login';
   import Register from './pages/Register/Register';
-  import './App.scss'
+  import './App.scss';
+  import ChooseTime from './pages/Choose-Time/ChooseTime';
 
 
 function App() {
