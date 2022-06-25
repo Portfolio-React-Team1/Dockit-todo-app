@@ -1,10 +1,11 @@
+import React from "react";
 import "./Landing.scss";
-import Slider from "./Slider";
+import Intro from "./Intro";
 
 function Landing() {
   return (
     <div>
-      <Slider />
+      <>{<Intro />}</>
     </div>
   );
 }

@@ -1,9 +1,12 @@
+import React from "react";
 import "./Onboarding.scss";
 import Frame161 from "../../assets/images/frame-161-1.png";
 import Back from "./Links/Back";
 import Next from "./Links/Next";
 
-function Onboarding3() {
+import React from 'react'
+
+const Onboarding3 = () => {
   return (
     <div className="container-center-horizontal">
       <div className="onboarding-screen">
@@ -31,12 +34,10 @@ function Onboarding3() {
           <Back />
           <Next />
         </div>
-        <div className="navi">
-          <div className="rectangle-90"> </div>
-        </div>
-      </div>
+      )&rbrace;
+      {showNextPage && <StartScreen />}
     </div>
-  );
-}
+  </div>
+)}
 
-export default Onboarding3;
+export default Onboarding3

@@ -5,33 +5,38 @@
   pointer-events: none;
   width: 100%;
 }
+
 .container-center-horizontal * {
   flex-shrink: 0;
   pointer-events: auto;
 }
+
 .onboarding-screen {
   background-color: #ffffff;
   height: 812px;
   width: 375px;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .onboarding-screen {
     height: 1024px;
     padding: 80px 90px;
     width: 1440px;
     flex-direction: column;
   }
 }
+
 .skip {
   line-height: 24px;
   white-space: nowrap;
-  color: rgba(0, 0, 0, 1);
+  color: black;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   top: 58px;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .skip {
     width: 34px;
     margin-left: 90px;
     margin-top: 92px;
@@ -43,8 +48,9 @@
   margin-left: 81px;
   margin-top: 84px;
   width: 210px;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .group-image {
     width: 213px;
     margin-left: 614px;
     margin-top: 235px;
@@ -57,8 +63,9 @@
   min-width: 95px;
   margin-left: 143px;
   margin-top: 51px;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .navi {
     width: 94px;
     margin-left: 673px;
     top: 564px;
@@ -73,7 +80,7 @@
 }
 
 .rectangle-10 {
-  background-color: rgba(175, 175, 175, 1);
+  background-color: #afafaf;
   border-radius: 56px;
   height: 4px;
   margin-left: 8px;
@@ -91,8 +98,9 @@
   color: rgba(0, 0, 0, 0.871);
   font-style: normal;
   font-weight: 700;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .screen-title {
     line-height: 38px;
     margin-left: 597px;
     top: 618px;
@@ -111,21 +119,24 @@
   min-height: 50px;
   min-width: 267px;
   white-space: nowrap;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .app-text {
     margin-left: 200px;
     top: 676px;
     text-align: center;
     column-gap: 1000px;
   }
 }
+
 .flex-row {
   align-items: center;
   display: flex;
   margin-top: 110px;
   min-width: 327px;
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .flex-row {
     padding: 30px;
   }
 }
@@ -136,12 +147,16 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .back {
   color: #000000;
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
+  .back {
     margin-right: 800px;
   }
 }
+
 .frame-121 {
   color: #ffffff;
   padding: 0 24px;

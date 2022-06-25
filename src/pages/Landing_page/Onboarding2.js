@@ -1,3 +1,4 @@
+import React from "react";
 import "./Onboarding.scss";
 import Group183 from "../../assets/images/group183.png";
 import Back from "./Links/Back";
@@ -32,10 +33,11 @@ function Onboarding2() {
           <Next />
         </div>
 
-        <div className="navi">
-          <div className="rectangle-90"> </div>
+          <div className="navi">
+            <div className="rectangle-90"> </div>
+          </div>
         </div>
-      </div>
+      {showNextPage && <Onboarding3 />}
     </div>
   );
 }
