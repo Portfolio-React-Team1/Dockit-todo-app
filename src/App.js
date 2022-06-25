@@ -6,11 +6,13 @@ import HomePage from './pages/HomePage/HomePage';
 import Cal from './pages/Calendar/Calendar'
 import TaskPriority from './pages/Task-Priority/TaskPriority';
 import AddTask from './pages/Add-Task/AddTask';
-   import Landing from "./pages/Landing_page/Landing";
-  import Login from './pages/Login/Login';
-  import Register from './pages/Register/Register';
-  import './App.scss';
-  import ChooseTime from './pages/Choose-Time/ChooseTime';
+import Landing from "./pages/Landing_page/Landing";
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import './App.scss';
+import ChooseTime from './pages/Choose-Time/ChooseTime';
+import StartScreen from './pages/Landing_page/StartScreen';
+
 function App() {
   return (
     <div className='d-flex'>
@@ -22,10 +24,12 @@ function App() {
           <Route path="/cal" element={<Cal />} ></Route>
           <Route path="/addtask" element={<AddTask />} ></Route>
           <Route path="/choosetime" element={<ChooseTime />} ></Route>
-           <Route path="/categoryPage" element={<CategoryPage />}/> 
-           <Route path="/home" element={<HomePage />}/> 
-           <Route path="/login" element={<Login />} ></Route> 
-           <Route path="/register" element={<Register />} ></Route>
+          <Route path="/categoryPage" element={<CategoryPage />}/> 
+          <Route path="/home" element={<HomePage />}/> 
+          <Route path="/login" element={<Login />} ></Route> 
+          <Route path="/register" element={<Register />} ></Route>
+          <Route path="/start" element={<StartScreen />} ></Route>
+          <Route path="/task" element={<TaskPriority />} ></Route>
 
         </Routes>
       </Router>

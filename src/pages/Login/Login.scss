@@ -3,6 +3,14 @@ line-height: 20px;
 background-color:#fff;
 padding: 20px;
 }
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px green solid;
+    width: 100%;
+}
 form{
 width: 400px;
 padding: 15px;

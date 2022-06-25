@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React,{ useState} from 'react';
 import './Login.scss';
 import {FaChevronLeft,FaGoogle,FaApple} from 'react-icons/fa';
 import {ToastContainer,toast } from 'react-toastify';
