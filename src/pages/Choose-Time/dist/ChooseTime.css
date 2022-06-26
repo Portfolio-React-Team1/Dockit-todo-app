@@ -1,0 +1,98 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 30%;
+}
+
+.container {
+  margin-top: 170px;
+  background: #e8e8e8;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  border-bottom: 1px solid gray;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.box {
+  background: rgba(244, 131, 25, 0.5);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.box input {
+  width: 100%;
+}
+
+.slider-entity {
+  flex: 1;
+  width: 100px;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+.slick-slide {
+  opacity: 0.1;
+  font-size: 30px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+}
+
+.slick-slide {
+  transition: opacity 0.3s;
+}
+
+.slick-slide div {
+  outline: none;
+  padding: 0 0 4px;
+  margin: 0 10px 0 0;
+  font-size: 1.5rem;
+}
+
+.slick-active {
+  opacity: 1;
+  background: transparent;
+}
+
+.col {
+  margin-top: 20px;
+}
+
+.colon {
+  color: white;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  width: 220px;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.btn:first-child {
+  background: #e8e8e8;
+}
+
+.btn:last-child {
+  background: #f48319;
+  color: white;
+}

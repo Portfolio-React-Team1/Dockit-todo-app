@@ -15,27 +15,21 @@ const AddTask = () => {
   // });
 
   const [task, settask] = useState('');
-  const user_id = Math.random();
-
-  // const [posts, setPosts] = useState([]);
-
-  //  // Post with Axios
-  //  const addPosts = async (task) => {
-  //   let response = await createTask.post('', {
-  //      task: task,
-  //   });
-  //   setPosts((posts) => [response.data, ...posts]);
-  //   };
 
   const handleChange = (e) => {
     e.preventDefault();
       
     settask(e.target.value);
+    console.log(task);
+
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://todo22a.herokuapp.com/api/v1/task', task, user_id).then(response => {
+    axios.post('https://todo22a.herokuapp.com/api/v1/task', {
+        user_id: Math.random().toString(36).slice(2),
+        todo: task,
+    }).then(response => {
       console.log(response)
     })
     // console.log(task);
@@ -54,18 +48,20 @@ const AddTask = () => {
           Add Task
         </p>
         
-          <form method='get' className='Form'>
+        <form method='get' className='Form'>
           
             <input type='text' placeholder='Task' className='input input1' name='task' onChange={ handleChange }></input>
 
            
-            <input type='text' placeholder='Description' className='input'></input>
-          </form>
+            <input type='number' placeholder='Enter a random value' className='input'></input>
+        </form>
 
           <div className='icon-container'>
             <div className='icon-section1'>
               <div className='icon-section2 triple'>
+              <a href='/choosetime'>
                   <BsClock className='icon'/>
+              </a>
               </div>
 
               <div className='icon-section2 triple'>
@@ -75,7 +71,9 @@ const AddTask = () => {
             </div>
             
             <div className='icon-section2 triple'>
-                <FiFlag className='icon' />
+                <a href='/task'>
+                  <FiFlag className='icon'/>
+                </a>
             </div>
             </div>
 
@@ -87,7 +85,7 @@ const AddTask = () => {
 
     </div>
 
-    
+
   )
 }
 

@@ -28,7 +28,7 @@ import {
                   <a href='/categoryPage'><CDBSidebarMenuItem  icon="table">Category</CDBSidebarMenuItem></a>
                   {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}
-              <a href='/'><CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem></a>
+              <a href='/login'><CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem></a>
               {/* <NavLink exact to="/" activeClassName="activeClicked">
                   </NavLink> */}
             </CDBSidebarMenu>

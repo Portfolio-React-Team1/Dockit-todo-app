@@ -87,12 +87,12 @@ class ChooseTime extends React.Component {
           </div>
           <div className="boxes">
             <Slider
-            {...settings}
-            className="slider-entity hours  slider1 box"
-            ref={(slider) => (this.slider1 = slider)}>
-              {this.hours.map((hour) => (
-                <div key={hour}>{hour}</div>
-              ))}
+              {...settings}
+              className="slider-entity hours  slider1 box"
+              ref={(slider) => (this.slider1 = slider)}>
+                {this.hours.map((hour) => (
+                  <div key={hour}>{hour}</div>
+                ))}
             </Slider>
             
             <div className='col'>
