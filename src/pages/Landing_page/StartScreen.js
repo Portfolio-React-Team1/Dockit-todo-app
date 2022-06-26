@@ -5,7 +5,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Onboarding3 from "./Onboarding3";
 
-function StartScreen() {
+const StartScreen = () => {
   const [goToPrev, setGoToPrev] = React.useState(false);
   const [showLoginPage, setShowLoginPage] = React.useState(false);
   const [showSignUpPage, setShowSignUpPage] = React.useState(false);
@@ -19,7 +19,6 @@ function StartScreen() {
   function newPage() {
     setShowSignUpPage(true);
   }
-
   return (
     <div className="container-center-horizontal">
       {!goToPrev && (
@@ -34,13 +33,11 @@ function StartScreen() {
           <h1 className="start-screen-title">
             <span> Welcome to Dockit</span>
           </h1>
-          <p className="text">
-            {" "}
+          <div className="text">
             <span>
-              {" "}
               Please login to your account or create a new account to continue
-            </span>{" "}
-          </p>
+            </span>
+          </div>
 
           <div className="frame-121">
             <div className="login" onClick={changePage}>
@@ -62,6 +59,6 @@ function StartScreen() {
       {goToPrev && <Onboarding3 />}
     </div>
   );
-}
+};
 
 export default StartScreen;
